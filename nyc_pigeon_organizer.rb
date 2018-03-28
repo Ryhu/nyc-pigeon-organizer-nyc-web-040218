@@ -7,6 +7,8 @@ def nyc_pigeon_organizer(data)
           if !result.has_key?(name)
             result[name] = {}
             result[name][t1key] = [t2key]
+          elsif result[name][t1key]
+            result[name][t1key] << t2key
           else
             result[name][t1key] = t2key
           end
