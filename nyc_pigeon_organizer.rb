@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
           elsif result[name][t1key]
             result[name][t1key] << t2key
           else
-            result[name][t1key] = t2key
+            result[name][t1key] = [t2key]
           end
         end
       end
