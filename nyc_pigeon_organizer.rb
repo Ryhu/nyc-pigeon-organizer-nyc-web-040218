@@ -4,8 +4,12 @@ def nyc_pigeon_organizer(data)
     if t1key == :color || t1key == :gender
       t1val.each do |t2key, t2val|
         t2val.each do |name|
-          if result.has_key?(name)
-          result[t2key] = 
+          if !result.has_key?(name)
+            result[name] = {}
+            result[name][t1key] = []
+          else
+            result[name][t1key] = t2key
+          end
         end
       end
     end
