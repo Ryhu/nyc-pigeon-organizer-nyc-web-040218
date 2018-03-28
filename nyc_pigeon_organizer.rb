@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
           end
         end
       end
-      
+      #:lives starts here
     else
       t1val.each do |t2key, t2val|
     end
