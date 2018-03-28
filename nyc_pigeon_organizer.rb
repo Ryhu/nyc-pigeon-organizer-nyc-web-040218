@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
         t2val.each do |name|
           if !result.has_key?(name)
             result[name] = {}
-            result[name][t1key] = []
+            result[name][t1key] = [t2key]
           else
             result[name][t1key] = t2key
           end
