@@ -8,9 +8,9 @@ def nyc_pigeon_organizer(data)
             result[name] = {}
             result[name][t1key] = [t2key.to_s]
           elsif result[name][t1key]
-            result[name][t1key] << t2key
+            result[name][t1key] << t2key.to_s
           else
-            result[name][t1key] = [t2key]
+            result[name][t1key] = [t2key.to_s]
           end
         end
       end
