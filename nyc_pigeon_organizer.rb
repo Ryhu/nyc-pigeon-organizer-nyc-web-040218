@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
     else
       t1val.each do |t2key, t2val|
         t2val.each do |name|
-          result[name][:lives]
+          result[name][:lives] = [t2key.to_s]
         end
       end
     end
