@@ -14,8 +14,11 @@ def nyc_pigeon_organizer(data)
           end
         end
       end
+      
+    else
+      t1val.each do |t2key, t2val|
     end
-  else
+
   end
   return result
 end
